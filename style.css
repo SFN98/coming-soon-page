@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 2em;
+    color: hsl(0, 0%, 59%);
+}
+h2{
+    font-size: 0.9em;
+    color: hsl(0, 0%, 59%); 
+    margin-top: 9px;
+}
+
+.dash{
+    width: 450px;
+    height: 250px;
+    
+}
+
+input{
+    border:1px solid hsl(0, 0%, 59%);
+    border-radius: 20px;
+    height: 5vh;
+    width: 19vw;
+    padding-left: 10px;
+}
+input.active{
+    border:1px solid hsl(0, 95%, 49%);
+}
+
+input[type='submit']{
+    background-color: hsl(223, 87%, 63%);
+    border:none;
+    width: 10vw;
+    height: 5vh;
+    color: white;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+input[type='submit']:focus{
+    background-color:hsl(223, 100%, 88%) ;
+    
+}
+
+span{
+    color:hsl(209, 33%, 12%) ;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 20px 0;
+    gap:10px;
+}
+
+.icon img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.block-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin: 20px 0 30px 0;
+}
+
+.logo{
+    margin: 35px;
+}
+
+@media screen and (max-width:420px){
+    .dash{
+        width: 350px;
+        height: 150px;
+        
+    }
+    input[type='submit']{
+        width: 20vw;
+        height: 5vh;
+    }
+
+    input{
+        height: 5vh;
+        width: 50vw;
+        padding-left: 10px;
+    }
+}
+
+
+@media screen and (width:540px){
+   
+    input[type='submit']{
+        width: 20vw;
+        height: 5vh;
+    }
+
+    input{
+        height: 5vh;
+        width: 50vw;
+        padding-left: 10px;
+    }
+}
